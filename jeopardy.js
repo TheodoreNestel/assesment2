@@ -19,6 +19,13 @@
 //  ]
 
 // this wiill contain an array of categories
+
+////////////////////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\/////////////////////////////
+///////////////
+//////////////      TIME STARTED :12;30 PM TIME ENDED 5:PM 
+//////////////
+
+
 let categories = [];
 
 
@@ -78,7 +85,7 @@ let categories = [];
  //the name was stupid so I changed the GetCategories
 function createTable(catID) {
 
-    let $Table = $(`<table id="gameTable"> <tr>${categories.map(cat => `<th>${cat.title}</th>`).join("")}</<tr> </table>`)
+    let $Table = $(`<table id="gameTable" > <tr>${categories.map(cat => `<th>${cat.title}</th>`).join("")}</<tr> </table>`)
     $("body").append($Table);
     let $Button = $(`<button>Restart Game</button>`)
     $("body").append($Button)
